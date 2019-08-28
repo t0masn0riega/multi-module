@@ -13,4 +13,5 @@ include 'registry'
 include 'customer'
 include 'support-office'
 include 'tasks-administration'
+include 'gateway-service'
 
