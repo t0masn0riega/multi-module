@@ -31,4 +31,10 @@ subprojects {
     group = 'com.mytest'
     version = '0.0.1-SNAPSHOT'
     sourceCompatibility = '11'
+
+    dependencies {
+        if (!name.startsWith('common-lib')) {
+            compile('org.springframework.cloud:spring-cloud-starter-sleuth')
+        }
+    }
 }
